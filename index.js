@@ -18,7 +18,7 @@ teamArray = [];
 
 
 function runApp () {
-// Add OOP functions here - create for the other roles, but not Employee.
+// Add OOP functions here - create for the other roles, but not Employee (Do for Intern and Manager)
 
 function addEngineer() {
     inquirer.prompt([

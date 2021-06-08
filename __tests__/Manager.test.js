@@ -8,7 +8,7 @@ test("Can create an office number.", () => {
 });
 
 test("Testing officeNumber will return office number.", () => {
-    const testGithub = 2;
+    const testOfficeNumber = 2;
     const employeeInstance = new Manager("James", 2, "jamesljenks@gmail.com", testOfficeNumber);
     expect(employeeInstance.getOfficeNumber()).toBe(testOfficeNumber);
 });

@@ -44,12 +44,12 @@ function addManager() {
 
     {
       type: "input",
-      name: "managerPhone",
-      message: "What is the manager's office phone number?"
+      name: "managerOfficeNumber",
+      message: "What is the manager's office number?"
     }
 
   ]).then(answers => {
-    const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerPhone);
+    const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
     teamArray.push(manager);
     createTeam();
   });
@@ -68,7 +68,7 @@ function addEngineer() {
 
       {
         type: "input",
-        name: "engineerId", // should ID numbers be auto-assigned?
+        name: "engineerId",
         message: "What is the engineer's employee ID number?" 
       },
 
@@ -127,12 +127,12 @@ function addEngineer() {
 
   }
 
-  // function to return to menu with option to add more team members
+  // return to menu with option to add another team member create team
 
-  // Would you like to add another team member?
+  // Would you like to add a team member?
   // Yes || No
-  // Yes --> Select a role for your new team member: Manager, Engineer, Intern
-  // No --> Create Team
+  // If Yes --> Then select an employee role for your new team member: Manager, Engineer, Intern
+  // If No --> Create Team
 
 
 function createTeam () {

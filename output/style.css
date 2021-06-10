@@ -1,3 +1,7 @@
+.jumbotron {
+    border-radius: 0;
+}
+
 .employee-card {
     box-shadow: 5px 5px 5px gray;
     margin: 1rem;
